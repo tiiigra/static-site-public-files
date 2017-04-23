@@ -9,6 +9,12 @@ $(function() {
     	offset: 70
     });
 
+    $('.templatemo-box').singlePageNav({
+        offset: 70
+    });
+
+
+
     /* Hide mobile menu after clicking on a link
     -----------------------------------------------*/
     $('.navbar-collapse a').click(function(){
