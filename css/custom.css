@@ -14,6 +14,11 @@ h3 {
     height: 0;
 }
 
+.center {
+    margin-left: auto;
+    margin-right: auto;
+}
+
 .full-width {
     width: 100% !important;
 }
@@ -84,12 +89,6 @@ p {
     margin: 0 0 7px;
 }
 
-#feature .fa {
-    width: 30px;
-    height: 30px;
-    line-height: 30px;
-}
-
 .pos-rel {
     position: relative;
 }
@@ -102,8 +101,24 @@ p {
     width: 30%;
 }
 
+.width-50 {
+    width: 50%;
+}
+
 .width-70 {
     width: 70%
+}
+
+.width-90 {
+    width: 90%;
+}
+
+.width-800 {
+    max-width: 800px;
+}
+
+.narrow-column {
+    max-width: 800px;
 }
 
 /*GENERAL END*/
@@ -175,6 +190,12 @@ p {
     margin: 0 auto;
 }
 
+/* DIVIDER */
+#divider {
+    padding-top: 60px;
+    padding-bottom: 80px;
+}
+
 .custom-button {
     display: inline-block;
     padding: 6px 14px;
@@ -196,14 +217,61 @@ p {
     color: #fff;
 }
 
+.divider-container p {
+    max-width: 333px;
+    letter-spacing: 0.5px;
+}
+/** DIVIDER END **/
+
+/* CS BLOCK */
+
+#feature {
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+
+.play-icon {
+    background: initial !important;
+    color: #666 !important;
+    position: absolute;
+    top: calc(50% - 20px);
+    font-size: 40px;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto !important;
+}
+
+
+.cs h2 {
+    text-align: center;
+}
+
+.cs p {
+    text-align: center;
+    margin-left: 0;
+    margin-right: 0;
+}
+
 .sc-pic-container {
     top: 70px;
 }
 
+.jobs-list {
+    margin-left: auto;
+    margin-right: auto;
+}
+
 .block-article {
-    margin-top: 50px;
-    padding: 15px 10px 15px 20px;
-    background: white;
+    padding-top: 40px;
+}
+
+.block-article p {
+    padding-top: 0 !important;
+    margin-bottom: 5px;
+    text-indent: 50px;
+    line-height: 2;
+    letter-spacing: 0.5px;
 }
 
 .img-overlay {
@@ -225,7 +293,37 @@ p {
     background: #000;
 }
 
+.cs ul {
+    padding-left: 0;
+    padding-left: 30px;
+}
+
+.cs li {
+    list-style: none;
+    width: 33.33%;
+    float: left;
+    margin-top: 10px;
+}
+/** CS BLOCK END **/
+
+/* PYTHON BLOCK */
+#python {
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+
+.python-container p {
+    letter-spacing: 0.5px;
+    line-height: 2;
+}
+/** PYTHON BLOCK END**/
+
 /*ROBOT BLOCK*/
+#robots {
+    background: #f8f8f8;
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
 
 .designed-robot-feature {
     position: relative;
@@ -243,6 +341,11 @@ p {
     max-height: 350px;
 }
 
+.feature-list {
+    position: relative;
+    left: 90px;
+}
+
 .robot-text-block_left {
     border-right: 1px solid rgba(40, 167, 233, 0.26);
     padding-right: 10px;
@@ -254,6 +357,7 @@ p {
     margin-bottom: 5px;
     text-indent: 50px;
     line-height: 2;
+    letter-spacing: 0.5px;
 }
 
 .robot-block h2 {
@@ -264,7 +368,6 @@ p {
 .robot-second-block {
     display: flex;
     align-items: center;
-    margin-top: 30px;
 }
 
 .robot-second-block .robot-text-container {
@@ -278,7 +381,6 @@ p {
 }
 
 .robot-pic-container {
-    max-height: 300px;
     position: relative;
     top: 30px
 }
@@ -287,22 +389,27 @@ p {
     text-align: center;
 }
 
+.cs p,
 .designed-robot-container p{
     text-align: center;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
     padding: 25px 0;
     font-size: 20px;
-    font-weight: 600;
+    font-weight: 400;
 }
 
 .designed-robot-container ul {
     width: 30%;
     float: left;
     position: relative;
-    left: 75px;
+    padding-left: 0px;
 }
 
 .designed-robot-container.features ul {
     width: 50%;
+    margin-right: 0px;
 }
 
 .designed-robot-container.features p {
@@ -325,10 +432,15 @@ p {
     line-height: 40px;
 }
 
+.jobs-list li,
 .designed-robot-container li{
     list-style-type: none;
     font-size: 18px;
     padding: 10px 0;
+}
+
+.designed-robot-container .column li {
+    padding-left: 70px;
 }
 
 .tick {
@@ -389,6 +501,11 @@ address > div {
 }
 
 /** Responsive **/
+@media (min-width: 1200px) {
+    .container {
+        width: 1106px;
+    }
+}
 
 @media (max-width: 991px) {
     #home {
